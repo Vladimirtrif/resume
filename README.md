@@ -5,7 +5,7 @@ Credit to Aras Gungore's resume template: [link](https://github.com/arasgungore/
 #### Creating your own resume
 
 You could install latex, install the packages, and copy my .tex file.  
-However, I use the nix package manager to handle dependencies and as a build system.   
+However, I use the nix package manager to handle dependencies and as a build system.  
 All you need is to install the nix package manager: [nix website](https://nixos.org/download/)  
 This command builds the pdf from the .tex file:  
 `nix run`  
