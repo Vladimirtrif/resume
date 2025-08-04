@@ -13,6 +13,7 @@
       latexEnv = pkgs.texlive.combine {
         inherit (pkgs.texlive)
           scheme-basic
+          geometry
           symbol
           titlesec
           marvosym
@@ -46,7 +47,7 @@
             text = ''
               mkdir -p ./log
               pdflatex --jobname=Vladimir-Trifonov-SWE-Resume --output-directory=./log/ Resume.tex
-              mv ./log/Vladimir-Trifonov-SWE-Resume.pdf ./
+              mv -f ./log/Vladimir-Trifonov-SWE-Resume.pdf ./
             '';
           })
           + "/bin/build-resume";
