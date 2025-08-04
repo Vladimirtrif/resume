@@ -44,6 +44,7 @@
             name = "build-resume";
             runtimeInputs = [ latexEnv ];
             text = ''
+              mkdir -p ./log
               pdflatex --jobname=Vladimir-Trifonov-SWE-Resume --output-directory=./log/ Resume.tex
               mv ./log/Vladimir-Trifonov-SWE-Resume.pdf ./
             '';
